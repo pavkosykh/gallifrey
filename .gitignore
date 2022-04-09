@@ -4,6 +4,10 @@
 *.dll
 *.so
 *.dylib
+*.sqlite3
+
+# Self (Binary)
+gallifrey
 
 # Test binary, built with `go test -c`
 *.test
@@ -15,3 +19,4 @@
 # vendor/
 #
 tags
+

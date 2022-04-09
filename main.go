@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println("Hello go")
+	db := ensure_database()
+	run_migrations(db)
+	close_database(db)
 }
