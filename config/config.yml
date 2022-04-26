@@ -1,0 +1,6 @@
+app:
+  name: 'gallifrey'
+  version: '0.0.1'
+
+sqlite:
+  path: 'db/gallifrey.db'
