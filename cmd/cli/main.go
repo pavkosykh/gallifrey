@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/pavkosykh/gallifrey/config"
@@ -15,5 +14,4 @@ func main() {
 	}
 
 	cli.Run(cfg)
-	fmt.Println("Hello go")
 }

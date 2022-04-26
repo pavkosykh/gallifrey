@@ -15,3 +15,8 @@
  ```
  brew install sqlite3
  ```
+
+ For running
+ ```
+ make build && ./.bin/gallifrey-cli
+ ```
