@@ -1,14 +1,14 @@
 package model
 
 import (
-	"time"
+	"database/sql"
 
 	"gorm.io/gorm"
 )
 
 type TimeSerial struct {
 	gorm.Model
-	StopAt  time.Time
+	StopAt  sql.NullTime
 	EventID int
 	Event   Event
 }

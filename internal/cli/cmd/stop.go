@@ -5,8 +5,9 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
+	"log"
 
+	repository "github.com/pavkosykh/gallifrey/internal/repository"
 	"github.com/spf13/cobra"
 )
 
@@ -21,7 +22,10 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("stop called")
+		if len(args) > 0 {
+			log.Fatalln("You don't need to tell us what are you doing. you need send 0 arguments")
+		}
+		repository.StopTimeSerial()
 	},
 }
 
